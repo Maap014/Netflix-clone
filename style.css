@@ -20,9 +20,9 @@ body {
   width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(
-      to bottom,
+      0deg,
       rgba(0, 8, 29, 0.7),
-      rgb(0, 8, 29)
+      rgb(0, 8, 29, 0.7)
     ),
     url(images/bg\ netflix.jpg);
   background-repeat: no-repeat;
@@ -30,7 +30,9 @@ body {
 
 .wrapper {
   width: 100%;
+  max-width: 100rem;
   padding: 0 24px;
+  margin: 0 auto;
 }
 .logo-container {
   width: 100%;
@@ -170,7 +172,6 @@ footer {
 
 .section-for-accordion {
   width: 100%;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,7 +229,6 @@ footer {
 }
 .accordion-item:target .answer {
   max-height: 40rem;
-  transition: max-height 2.5s ease;
 }
 
 .accordion-item:target .accordion-link .fa-plus::before {
@@ -270,7 +270,7 @@ footer a:active {
 
 select {
   background-color: rgb(14 14 14);
-  padding: 5px 25px;
+  padding: 7px 30px;
   border: 1px #939393 solid;
   border-radius: 4px;
   color: #fff;
@@ -285,8 +285,9 @@ select {
 
 .fa-globe {
   position: absolute;
-  left: 10px;
-  top: 9px;
+  left: 0px;
+  top: 12px;
+  transform: translateX(10px);
 }
 
 footer p {
@@ -446,7 +447,7 @@ footer p {
   }
   .FAQ-container:first-child,
   footer {
-    padding: 5rem 6rem;
+    padding: 7rem 6rem;
   }
 
   .footer-links {
@@ -497,13 +498,15 @@ footer p {
   }
 }
 
-@media (min-width: 2559px) {
+@media (min-width: 1997px) {
   .image-overlay {
     background-size: contain;
   }
+}
 
-  .wrapper {
-    padding: 0px 31rem;
+@media (min-width: 2559px) {
+  .image-overlay {
+    background-size: contain;
   }
 
   .hero-section {
