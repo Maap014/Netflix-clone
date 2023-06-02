@@ -243,14 +243,14 @@ footer a {
         rgba(0, 0, 0, 0.54)
       ),
       url(images/sign-up-bg-img.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
   }
 
   main {
-    background-color: rgb(0 0 0 / 86%);
-    margin: 0px 24% 50px;
-    padding: 5% 5% 6%;
+    max-width: 450px;
+    background-color: rgb(0 0 0 / 70%);
+    margin: 0px auto 90px;
+    padding: 3% 3% 6%;
     border-radius: 5px;
   }
 
@@ -264,8 +264,8 @@ footer a {
 
   footer {
     border-top: none;
-    background-color: rgb(0 0 0 / 86%);
-    padding: 2rem 3rem 4rem;
+    background-color: rgb(0 0 0 / 70%);
+    padding: 2rem 14% 4rem;
   }
 
   .footer-links {
